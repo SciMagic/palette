@@ -8,4 +8,4 @@ and you can add you own palette image just invoke<br>
 \- (instancetype)initWithPaletteImage:(UIImage *)image withFrame:(CGRect)frame<br>
 it will make up the rest of things<br>
 
-![screenshot](https://github.com/chaobaji/palette/blob/master/Screenshots/screenShot.png)
+<img width="375" height="689" src="https://github.com/chaobaji/palette/blob/master/Screenshots/screenShot.png"/>
