@@ -1,5 +1,5 @@
 //
-//  CHKPaletteView.h
+//  CBJPaletteView.h
 //  Palette
 //
 //  Created by 超八机 on 2017/7/30.
@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class CHKPaletteView;
+@class CBJPaletteView;
 
-@protocol CHKPaletteViewDelegate <NSObject>
+@protocol CBJPaletteViewDelegate <NSObject>
 
 @optional
-- (void)didSelectColor:(CHKPaletteView *)view selectedColor:(UIColor *)color;
+- (void)didSelectColor:(CBJPaletteView *)view selectedColor:(UIColor *)color;
 
 @end
 
@@ -25,12 +25,12 @@ typedef enum : NSUInteger {
 
 
 //use set frame to change the position
-@interface CHKPaletteView : UIView
+@interface CBJPaletteView : UIView
 
 - (instancetype)initWithPaletteType:(PaletteType)type withFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)initWithPaletteImage:(UIImage *)image withFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
 
-@property(weak, nonatomic) id<CHKPaletteViewDelegate> delegate;
+@property(weak, nonatomic) id<CBJPaletteViewDelegate> delegate;
 
 @end

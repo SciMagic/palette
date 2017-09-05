@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "CHKPaletteView.h"
+#import "CBJPaletteView.h"
 
-@interface ViewController () <CHKPaletteViewDelegate>
+@interface ViewController () <CBJPaletteViewDelegate>
 
 @end
 
@@ -18,19 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CHKPaletteView *circlePalette = [[CHKPaletteView alloc] initWithPaletteType:PaletteCircle withFrame:CGRectMake(50, 70, 150, 150)];
+    CBJPaletteView *circlePalette = [[CBJPaletteView alloc] initWithPaletteType:PaletteCircle withFrame:CGRectMake(50, 70, 150, 150)];
     circlePalette.delegate = self;
     [self.view addSubview:circlePalette];
     
-    CHKPaletteView *stripPalette = [[CHKPaletteView alloc] initWithPaletteType:PaletteStrip withFrame:CGRectMake(230, 90, 100, 200)];
+    CBJPaletteView *stripPalette = [[CBJPaletteView alloc] initWithPaletteType:PaletteStrip withFrame:CGRectMake(230, 90, 100, 200)];
     stripPalette.delegate = self;
     [self.view addSubview:stripPalette];
     
-    CHKPaletteView *hexagonPalette = [[CHKPaletteView alloc] initWithPaletteType:PaletteHexagon withFrame:CGRectMake(50, 250, 150, 150)];
+    CBJPaletteView *hexagonPalette = [[CBJPaletteView alloc] initWithPaletteType:PaletteHexagon withFrame:CGRectMake(50, 250, 150, 150)];
     hexagonPalette.delegate = self;
     [self.view addSubview:hexagonPalette];
     
-    CHKPaletteView *paletteWithImg = [[CHKPaletteView alloc] initWithPaletteImage:[UIImage imageNamed:@"circle"] withFrame:CGRectMake(210, 300, 150, 150)];
+    CBJPaletteView *paletteWithImg = [[CBJPaletteView alloc] initWithPaletteImage:[UIImage imageNamed:@"circle"] withFrame:CGRectMake(210, 300, 150, 150)];
     paletteWithImg.delegate = self;
     [self.view addSubview:paletteWithImg];
     
@@ -43,7 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)didSelectColor:(CHKPaletteView *)view selectedColor:(UIColor *)color
+- (void)didSelectColor:(CBJPaletteView *)view selectedColor:(UIColor *)color
 {
     self.view.backgroundColor = color;
 }

@@ -13,7 +13,7 @@
 		FAFB4C591F2E1A440077C47B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB4C571F2E1A440077C47B /* Main.storyboard */; };
 		FAFB4C5B1F2E1A440077C47B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFB4C5A1F2E1A440077C47B /* Assets.xcassets */; };
 		FAFB4C5E1F2E1A440077C47B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB4C5C1F2E1A440077C47B /* LaunchScreen.storyboard */; };
-		FAFB4C681F2E1AD20077C47B /* CHKPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB4C671F2E1AD20077C47B /* CHKPaletteView.m */; };
+		FAFB4C681F2E1AD20077C47B /* CBJPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB4C671F2E1AD20077C47B /* CBJPaletteView.m */; };
 		FAFB4C7D1F2E38960077C47B /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAFB4C7A1F2E38960077C47B /* circle@2x.png */; };
 		FAFB4C7E1F2E38960077C47B /* hexagon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAFB4C7B1F2E38960077C47B /* hexagon@2x.png */; };
 		FAFB4C7F1F2E38960077C47B /* strip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAFB4C7C1F2E38960077C47B /* strip@2x.png */; };
@@ -30,8 +30,8 @@
 		FAFB4C5A1F2E1A440077C47B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFB4C5D1F2E1A440077C47B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFB4C5F1F2E1A440077C47B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFB4C661F2E1AD20077C47B /* CHKPaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHKPaletteView.h; path = palette/CHKPaletteView.h; sourceTree = "<group>"; };
-		FAFB4C671F2E1AD20077C47B /* CHKPaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHKPaletteView.m; path = palette/CHKPaletteView.m; sourceTree = "<group>"; };
+		FAFB4C661F2E1AD20077C47B /* CBJPaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJPaletteView.h; path = palette/CBJPaletteView.h; sourceTree = "<group>"; };
+		FAFB4C671F2E1AD20077C47B /* CBJPaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJPaletteView.m; path = palette/CBJPaletteView.m; sourceTree = "<group>"; };
 		FAFB4C7A1F2E38960077C47B /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle@2x.png"; path = "palette/circle@2x.png"; sourceTree = "<group>"; };
 		FAFB4C7B1F2E38960077C47B /* hexagon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hexagon@2x.png"; path = "palette/hexagon@2x.png"; sourceTree = "<group>"; };
 		FAFB4C7C1F2E38960077C47B /* strip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "strip@2x.png"; path = "palette/strip@2x.png"; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 				FAFB4C7A1F2E38960077C47B /* circle@2x.png */,
 				FAFB4C7B1F2E38960077C47B /* hexagon@2x.png */,
 				FAFB4C7C1F2E38960077C47B /* strip@2x.png */,
-				FAFB4C661F2E1AD20077C47B /* CHKPaletteView.h */,
-				FAFB4C671F2E1AD20077C47B /* CHKPaletteView.m */,
+				FAFB4C661F2E1AD20077C47B /* CBJPaletteView.h */,
+				FAFB4C671F2E1AD20077C47B /* CBJPaletteView.m */,
 			);
 			name = palette;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 				FAFB4C561F2E1A440077C47B /* ViewController.m in Sources */,
 				FAFB4C531F2E1A440077C47B /* AppDelegate.m in Sources */,
 				FAFB4C501F2E1A440077C47B /* main.m in Sources */,
-				FAFB4C681F2E1AD20077C47B /* CHKPaletteView.m in Sources */,
+				FAFB4C681F2E1AD20077C47B /* CBJPaletteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +342,7 @@
 				FAFB4C641F2E1A440077C47B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

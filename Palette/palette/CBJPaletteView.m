@@ -1,20 +1,20 @@
 //
-//  CHKPaletteView.m
+//  CBJPaletteView.m
 //  Palette
 //
 //  Created by 超八机 on 2017/7/30.
 //  Copyright © 2017年 Hacky. All rights reserved.
 //
 
-#import "CHKPaletteView.h"
+#import "CBJPaletteView.h"
 
-@interface CHKPaletteView ()
+@interface CBJPaletteView ()
 
 @property (weak, nonatomic) UIImageView *colorView;
 
 @end
 
-@implementation CHKPaletteView
+@implementation CBJPaletteView
 
 - (instancetype)initWithPaletteType:(PaletteType)type
 {
