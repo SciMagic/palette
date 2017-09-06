@@ -119,6 +119,13 @@
     
     UIColor *color = [self colorAtPixel:tapPoint];
     
+    if (!color){
+        
+        color = [UIColor whiteColor];
+        
+    }
+    
+    
     if (self.delegate && [self.delegate respondsToSelector:@selector(didSelectColor:selectedColor:)]) {
         
         [self.delegate didSelectColor:self selectedColor:color];
@@ -132,6 +139,13 @@
     CGPoint panPoint = [panGR locationInView:self.colorView];
     
     UIColor *color = [self colorAtPixel:panPoint];
+    
+    if (!color){
+        
+        color = [UIColor whiteColor];
+        
+    }
+    
     
     if (self.delegate && [self.delegate respondsToSelector:@selector(didSelectColor:selectedColor:)]) {
         
